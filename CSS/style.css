@@ -33,7 +33,7 @@ body {
 	top:0;	
 	overflow: hidden;
 	background-color: #08940f;
-	position: absolute;
+	position:absolute;
 	display:flex;
 	justify-content: center;
 }
@@ -158,11 +158,12 @@ li a:hover {
 
 #map {
     height: 900px;
-    width:80%;
+    width:90%;
 	text-align: center;
+	margin-top: 5vw;
 	margin-bottom: 1vw;
-	margin-left: 10vw;
-	margin-right: 10vw;
+	margin-left: 1vw;
+	margin-right: 1vw;
 }
 /* about us page code */
 .bghead {
@@ -260,11 +261,11 @@ li a:hover {
 	display: flex;
 }
 .flex1 {
-	flex:40%;
+	flex:30%;
 	border: #000000 2px;
 	margin-right: 10px;
 }
 .flex2 {
-	flex:60%;
+	flex:70%;
 	border: #000000 2px;
 }
