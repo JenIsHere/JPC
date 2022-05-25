@@ -21,7 +21,7 @@ body {
 	padding:0;
 	top:0;	
 	overflow: hidden;
-	background-color: #08940f;
+	background-color: #187ba4;
 	position: sticky;
 	display:flex;
 	justify-content: center;
@@ -32,7 +32,7 @@ body {
 	padding:0;
 	top:0;	
 	overflow: hidden;
-	background-color: #08940f;
+	background-color: #187ba4;
 	position:absolute;
 	display:flex;
 	justify-content: center;
@@ -55,17 +55,17 @@ li a{
 }
 li a:focus{
 	border-color:white;
-	background-color:#14ae1b;
+	background-color:#007cba;;
 	color:white;
 	font-weight: bold;
 }
 li a:hover {
-	background-color: #14ae1b;
+	background-color: #007cba;;
 	color:white;
 }
 .active{
 	display: block;
-	background-color:#016c06;
+	background-color:#0c71c3;
 }
 .block1 {
 	padding: 0.5vw;
@@ -237,7 +237,7 @@ li a:hover {
     text-align: center;
 }
 .footer {
-	background-color: #08940f;
+	background-color: #0c71c3;
 	position: static;
 	width: 100%;
 	bottom: 0px;
