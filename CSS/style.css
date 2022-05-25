@@ -70,8 +70,8 @@ li a:hover {
 .block1 {
 	padding: 0.5vw;
 	margin-top: 0;
-	margin-left: 10vw;
-	margin-right:10vw;
+	margin-left: 1vw;
+	margin-right:1vw;
 	border-bottom:solid;
 	border-color: #000000;
 	border-width: 1pt;
@@ -195,8 +195,8 @@ li a:hover {
 }
 .Sgrid {
     padding-top: 64px;
-    padding-left: 10vw;
-	padding-right: 10vw;
+    padding-left: 1vw;
+	padding-right: 1vw;
     display: flex;
 }
 
@@ -255,4 +255,16 @@ li a:hover {
 	height:100%;
 	text-align: center;
 	padding-bottom: 1vw;
+}
+.flex-container {
+	display: flex;
+}
+.flex1 {
+	flex:40%;
+	border: #000000 2px;
+	margin-right: 10px;
+}
+.flex2 {
+	flex:60%;
+	border: #000000 2px;
 }
