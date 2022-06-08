@@ -317,6 +317,8 @@ li a:hover {
   padding: 10px 15px;
   border: none;
   height: 5vw;
+  width: 10%;
+  position: relative;
 }
 
 .openbtn:hover {
