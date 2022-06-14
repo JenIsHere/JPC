@@ -329,12 +329,16 @@ li a:hover {
 /*Testing 2*/
 .sidebar {
 	height:100%;
-	width:240px;
+	width:70px;
 	background:#111;
 	position:fixed;
 	top:0;
 	left:0;
 	padding: 6px 14px;
+	transition: all 0.5s ease;
+}
+.sidebar .active{
+	width: 240px;
 }
 .sidebar .logocontent .logo{
 	color:#fff;
@@ -342,6 +346,12 @@ li a:hover {
 	height: 50px;
 	width:100%;
 	align-items: center;
+	opacity:0;
+	pointer-events: none;
+}
+.sidebar .active .logocontent .logo{
+	opacity: 1;
+	pointer-events: none;
 }
 .logocontent .logo i{
 	font-size: 28px;
@@ -351,7 +361,7 @@ li a:hover {
 	color:#fff;
 	position:absolute;
 	z-index: 1;
-	left:90%;
+	left:50%;
 	top:6px;
 	font-size: 20px;
 	height:50px;
@@ -359,6 +369,9 @@ li a:hover {
 	text-align: center;
 	line-height: 50px;
 	transform: translateX(-50%);
+}
+.sidebar .active #btn {
+	left:90%;
 }
 .sidebar ul{
 	margin-top: 20px;
@@ -378,18 +391,27 @@ li a:hover {
 	align-items: center;
 	text-decoration: none;
 	transition: all 0.4s ease;
+	white-space: nowrap;
 }
 .sidebar ul li a:hover{
 	background:#fff;
 	color:#111;
 	cursor:grab;
 }
-.sidebar ul li a i{
+.sidebar ul li i{
 	height:50px;
 	min-width: 50px;
 	border-radius: 12px;
 	line-height: 50px;
 	text-align: center;
+}
+.sidebar .link_name{
+	opacity:0;
+	pointer-events: none;
+}
+.sidebar .active .link_name{
+	opacity:1;
+	pointer-events: auto;
 }
 .sidebar ul li .tooltip{
 	position:absolute;
@@ -398,7 +420,7 @@ li a:hover {
 	background:#fff;
 	left:122px;
 	top:0;
-	transform: translateY(-50%);
+	transform: translate(-50%,-50%);
 	border-radius: 6px;
 	line-height:35px;
 	text-align:center;
@@ -406,7 +428,11 @@ li a:hover {
 	transition: 0s;
 	opacity:0;
 	pointer-events: none;
+	display: block;
 }
+.sidebar .active ul li .tooltip{
+	display: none;
+}	
 .sidebar ul li:hover .tooltip{
 	top:50%;
 	transition: all 0.4s ease;
