@@ -360,7 +360,6 @@ li a:hover {
 .sidebar #btn{
 	color:#fff;
 	position:absolute;
-	z-index: 1;
 	left:50%;
 	top:6px;
 	font-size: 20px;
