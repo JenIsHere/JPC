@@ -1,3 +1,11 @@
+/*Script for side bar */
+let btn = document.querySelector("#btn");
+let sidebar = document.querySelector(".sidebar");
+
+btn.onclick = function() {
+    sidebar.classList.toggle("active");
+}
+/* Ends here */
 /* Set the width of the sidebar to 250px (show it) */
 function openNav() {
     document.getElementById("mySidepanel").style.width = "10%";
