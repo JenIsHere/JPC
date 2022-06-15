@@ -326,7 +326,15 @@ li a:hover {
 }
 
 /* Testing Part */
+
+
 /*Testing 2*/
+body {
+	position: relative;
+	min-height: 100vh;
+	width:100%;
+	overflow: hidden;
+}
 .sidebar {
 	height:100%;
 	width:70px;
