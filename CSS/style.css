@@ -272,7 +272,7 @@ li a:hover {
 
 
 /*Testing 2*/
-.sbody {
+sbody {
 	position: relative;
 	min-height: 100vh;
 	width:100%;
