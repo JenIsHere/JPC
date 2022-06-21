@@ -395,14 +395,14 @@ body {
 	transition: all 0.4s ease;
 	opacity:1;
 }
-.home_content{
+.flex-container{
 	position:absolute;
 	height:100%;
 	left:78px;
 	width:calc(100%-78px);
 	transition: all 0.5s ease;
 }
-.sidebar .active ~ .home_content {
+.sidebar .active ~ .flex-container {
 	width: calc(100%-240px);
 	left:240px;
 }
