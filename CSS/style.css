@@ -38,7 +38,9 @@ body {
 	justify-content: center;
 }
 
-li {
+/*Commented out for test*/
+
+/* li {
 	float:left;
 	text-align:center;
 }
@@ -66,7 +68,11 @@ li a:hover {
 .active{
 	display: block;
 	background-color:#0c71c3;
-}
+} */
+
+/*
+Commented out for test
+*/
 .block1 {
 	padding: 0.5vw;
 	margin-top: 0;
@@ -335,7 +341,7 @@ body {
 	line-height: 50px;
 	border-radius: 12px;
 }
-.sidebar ul li .barbtn{
+.sidebar ul li a{
 	color:#fff;
 	display:flex;
 	align-items: center;
@@ -343,12 +349,12 @@ body {
 	transition: all 0.4s ease;
 	white-space: nowrap;
 }
-.sidebar ul li .barbtn:hover{
+.sidebar ul li a:hover{
 	background:#fff;
 	color:#111;
 	cursor:grab;
 }
-.sidebar ul li .barbtn i{
+.sidebar ul li a i{
 	height:50px;
 	min-width: 50px;
 	border-radius: 12px;
