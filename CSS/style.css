@@ -272,7 +272,7 @@ li a:hover {
 
 
 /*Testing 2*/
-body {
+sbody {
 	position: relative;
 	min-height: 100vh;
 	width:100%;
@@ -291,7 +291,7 @@ body {
 .sidebar .active{
 	width: 240px;
 }
-.sidebar .logocontent .logo{
+.sidebar .logo_content .logo{
 	color:#fff;
 	display: flex;
 	height: 50px;
@@ -300,11 +300,11 @@ body {
 	opacity:0;
 	pointer-events: none;
 }
-.sidebar .active .logocontent .logo{
+.sidebar .active .logo_content .logo{
 	opacity: 1;
 	pointer-events: none;
 }
-.logocontent .logo i{
+.logo_content .logo i{
 	font-size: 28px;
 	margin-right: 5px;
 }
