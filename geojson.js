@@ -1,4 +1,5 @@
-/*Script for side bar */
+window.onload = function(){ 
+  /*Script for side bar */
 let btn = document.querySelector("#btn");
 let sidebar = document.querySelector(".sidebar");
 
@@ -14,6 +15,8 @@ function openNav() {
   /* Set the width of the sidebar to 0 (hide it) */
   function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
+
+};
 
 var airport = {
     "type": "Feature",
