@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Solution</title>
+  
+  <meta charset="utf-8">
+
+  <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&amp;display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+</head>
+<body class = "sbody">
+<div class="flex-container">
+    <!--Testing part -->
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">first</a>
+      <a href="#">Second</a>
+      <a href="#">Third</a>
+      <a href="#">Fourth</a>
+    </div>
+    <button class="openbtn" onclick="openNav()">&#9776; Toggle Sidepanel</button>
+    <!--Testing Part-->
+  <div class="flex1">
+  <nav class="'navbar2">
+  <ul class="navbar2">
+      <li><a href="index.html">Home</a></li>
+      <li><a href= "Aboutus.html">The Team</a></li>
+      <li><a href= "Methodology.html">Methodology</a></li>
+      <li><a class="active" href= "Solution.html">Solution</a></li>
+  </ul>
+  </nav>  
+  <div class="Sgrid">
+    <div class="gridcontent">
+      <p class="generalText">The map displays an overview of Ontario's Greater Golden Horseshoe Region along with the Greenbelt designations.</p>
+      <p class="generalText">The ten locations on the map represent the ten hot spots that have been identified to be at elevated risk if the urban sprawl is not controlled in time. Feel free to explore!</p>
+    </div>
+  </div>
+</div>
+<div class="flex2">
+  <div id='map'></div>
+</div>
+</div>
+    
+<script src="geojson.js"></script>
+
+<script>
+var map = L.map('map').setView([43.974,-79.307], 8);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+maxZoom: 14,
+id: "cchappellfleming/cl1o4s7m5001a14n1udhz1c3u",
+tileSize: 256,
+accessToken: "pk.eyJ1IjoiY2NoYXBwZWxsZmxlbWluZyIsImEiOiJjbDFtazRybmQwMTNqM2RvM3A4MDVsZGl6In0.Rg9qLJgQ4z8BfufefbEvEQ"
+}).addTo(map);
+
+</script>
+<footer>
+  <div class="footer">
+      <p class="footernote"> Team JPC - Fleming College 2022 </p>
+  </div>
+</footer>
+</body>
+</html>
