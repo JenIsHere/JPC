@@ -272,11 +272,11 @@ li a:hover {
 
 
 /*Testing 2*/
-sbody {
+body {
 	position: relative;
 	min-height: 100vh;
 	width:100%;
-	overflow: hidden;
+	overflow:scroll;
 }
 .sidebar {
 	height:100%;
