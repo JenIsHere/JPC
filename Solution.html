@@ -8,9 +8,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="CSS/style.css">
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
   
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&amp;display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
@@ -54,16 +53,17 @@
       margin-bottom: 20px;
     }
     #start {
-				width:20%;
-                		 float: left;
-				 position: absolute; 
-				 top: 100px; 
-				 right: 15px; 
-				 text-align: right;
-			 }
+			width:20%;
+      float: left;
+			position: absolute; 
+			top: 100px; 
+			right: 15px; 
+			text-align: right;
+		}
   </style>
 </head>
 <body class = "body">
+
   <div class = "container">
   <nav>
     <ul class="navbar2">
@@ -72,8 +72,9 @@
         <li><a href= "Methodology.html">Methodology</a></li>
         <li><a class="active" href= "Solution.html">Solution</a></li>
     </ul>
-</div>
-  </nav>  
+  </nav> 
+</div> 
+<!-- <div class="flex-container"></div> -->
 <!-- <div class="Sgrid">
     <div class="gridcontent">
       <p class="generalText">The map displays an overview of Ontario's Greater Golden Horseshoe Region along with the Greenbelt designations.</p>
@@ -82,16 +83,15 @@
 </div> -->
 <div id ="background">
   <div id='map'></div>
-  <div>
-    <p class="start">The map displays an overview of Ontario's Greater Golden Horseshoe Region along with the Greenbelt designations.</p>
-    <p class="start">The ten locations on the map represent the ten hot spots that have been identified to be at elevated risk if the urban sprawl is not controlled in time. Feel free to explore!</p>
-  </div>
-  <div>
+</div>
     
 <!-- <script src="geojson.js"></script> -->
-<!-- 43.974,-79.307 -->
 <script>
-var map = L.map('map').setView([43.701,-79.120], 9);
+
+var map = L.map('map').setView([43.701,-79.120], 10);
+var lysTest
+// var objOverlays;
+// var ctlLayers;
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -101,6 +101,20 @@ tileSize: 256,
 accessToken: "pk.eyJ1IjoiY2NoYXBwZWxsZmxlbWluZyIsImEiOiJjbDFtazRybmQwMTNqM2RvM3A4MDVsZGl6In0.Rg9qLJgQ4z8BfufefbEvEQ"
 }).addTo(map);
 
+var imageUrl = "Layers/CTest8.png";
+var latLngBounds = L.latLngBounds([[44.557035, -80.275226],[42.796922, -78.336803]]);
+var imageOverlay = L.imageOverlay(imageUrl, latLngBounds, {
+//     opacity: 0.8,
+}).addTo(map);
+
+L.rectangle(latLngBounds).addTo(map);
+	map.fitBounds(latLngBounds);
+
+  // objOverlays={
+//   "Test Image":lyrTest
+// };
+
+// ctlLayers = L.control.layers(objOverlays).addTo(map);
 </script>
 <!-- <footer>
   <div class="footer">
