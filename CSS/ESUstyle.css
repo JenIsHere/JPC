@@ -89,13 +89,15 @@ ul {
     z-index: 2;
     background-color:#D3D3D3;
     opacity: 0.9;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
 }
 
 .active{
     height: 50px;
     width: 100%;
     background-color: rgb(59,59,52);
-    padding-top: 11%;
+    padding-top: 7px;
     position: absolute;
     border-radius: 40px;
     box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
@@ -163,4 +165,15 @@ a {
     cursor:pointer;
     color: rgb(59,59,52);
 
+}
+
+#active2{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(59,59,52);
+    padding-top: 11%;
+    position: absolute;
+    border-radius: 40px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+    color:whitesmoke;
 }
