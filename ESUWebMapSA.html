@@ -49,8 +49,9 @@
     const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/cchappellfleming/cl1o4s7m5001a14n1udhz1c3u',// style URL
-    center: [-79.120, 43.701], // starting position [lng, lat]
-    zoom: 8 // starting zoom
+    center: [-79.120, 43.701],
+    zoom: 8,
+    minZoom: 8
     });
 
     function toggleSidebar(id) {
