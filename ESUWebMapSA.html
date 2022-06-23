@@ -18,8 +18,8 @@
         <ul>
             <li><a class="active" href="ESUWebMapSA.html">Study Area</a></li>
             <li><a href="ESUWebMapUR.html">Urban Weighted Surface</a></li>
-            <li><a href="ESUWebMap.html">Weighted Surface</a></li>
-            <li><a href="ESUWebMap.html">Weighted Surface</a></li>
+            <li><a href="ESUWebMapBL.html">Balanced Weighted Surface</a></li>
+            <li><a href="ESUWebMapCN.html">Conservationist Weighted Surface</a></li>
             <li><a href="faq.html">FAQ</a></li>
         </ul>
     </div>
@@ -48,10 +48,6 @@
     style: 'mapbox://styles/cchappellfleming/cl1o4s7m5001a14n1udhz1c3u',// style URL
     center: [-79.120, 43.701], // starting position [lng, lat]
     zoom: 8 // starting zoom
-    });
-    
-    map.on('load', () => {
-        toggleSidebar('left');
     });
 
     function toggleSidebar(id) {
