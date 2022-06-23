@@ -38,6 +38,7 @@ box-shadow: 0 0 50px -25px black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     color: rgb(0, 0, 0);
+    display: block;
 }
 
 .sidebar-toggle {
@@ -51,6 +52,7 @@ box-shadow: 0 0 50px -25px black;
 }
 .sidebar-toggle.left {
     right: -1.5em;
+    bottom:50%;
 }
 .sidebar-toggle:hover {
     color: #0aa1cf;
@@ -116,4 +118,27 @@ ul li {
     z-index: 3;
 
     cursor: pointer;
+}
+/* Jenish here*/
+.logo {
+    display:inline-block;
+    margin: 20px;
+    margin-left: -2px;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    cursor:pointer;
 }
