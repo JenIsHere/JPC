@@ -43,7 +43,7 @@
  <script>
 	mapboxgl.accessToken = 'pk.eyJ1IjoiY2NoYXBwZWxsZmxlbWluZyIsImEiOiJjbDFtazRybmQwMTNqM2RvM3A4MDVsZGl6In0.Rg9qLJgQ4z8BfufefbEvEQ';
     
-    const EUSUrban = new mapboxgl.Map({
+    const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/cchappellfleming/cl4rf1lvs000i14qs3mmqiiwp',
         center: [-79.1055, 43.8452],
@@ -59,7 +59,10 @@
             padding: padding,
             duration: 1000
         });
-    }  
+    } 
+    map.on('load', () => {
+        toggleSidebar('left');
+    }); 
 </script>
  
 </body>

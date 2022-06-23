@@ -44,7 +44,7 @@
  <script>
 	mapboxgl.accessToken = 'pk.eyJ1IjoiY2NoYXBwZWxsZmxlbWluZyIsImEiOiJjbDFtazRybmQwMTNqM2RvM3A4MDVsZGl6In0.Rg9qLJgQ4z8BfufefbEvEQ';
     
-    const EUSHome = new mapboxgl.Map({
+    const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/cchappellfleming/cl1o4s7m5001a14n1udhz1c3u',// style URL
     center: [-79.120, 43.701], // starting position [lng, lat]
@@ -61,6 +61,10 @@
             duration: 1000
         });
     }
+    
+    map.on('load', () => {
+        toggleSidebar('left');
+    });
 </script>
  
 </body>
