@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Catchy Title Here!</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+
+  <link rel="stylesheet" href="CSS/ESUstyle.css">
+  
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
+</head>
+
+<body>
+<div id="map">
+    <div id ="nav">
+        <ul>
+            <li><a href="ESUWebMapSA.html">"Study Area"</a></li>
+            <li><a class="active" href="ESUWebMapUR.html">Urban Weighted Surface</a></li>
+            <li><a href="ESUWebMap.html">Weighted Surface</a></li>
+            <li><a href="ESUWebMap.html">Weighted Surface</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </div>
+    <div id="left" class="sidebar flex-center left collapsed">
+        <div class="sidebar-content rounded-rect"></div>
+        <div class="sidebar-content rounded-rect flex-center">     
+            Left Sidebar
+            <div class="sidebar-toggle rounded-rect left" onclick="toggleSidebar('left')">
+                &rarr;
+            </div>
+        </div>
+    </div>
+</div>
+
+ <script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoiY2NoYXBwZWxsZmxlbWluZyIsImEiOiJjbDFtazRybmQwMTNqM2RvM3A4MDVsZGl6In0.Rg9qLJgQ4z8BfufefbEvEQ';
+    
+    const EUSUrban = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/cchappellfleming/cl4pz7hvw000l14pcfsl57vqd',
+    center: [-79.1055, 43.8452],
+    zoom: 11
+    });
+    
+    map.on('load', () => {
+        toggleSidebar('left');
+    });
+
+    function toggleSidebar(id) {
+        const elem = document.getElementById(id);
+        const collapsed = elem.classList.toggle('collapsed');
+        const padding = {};
+        padding[id] = collapsed ? 0 : 300;
+        map.easeTo({
+            padding: padding,
+            duration: 1000
+        });
+    }
+</script>
+ 
+</body>
+</html>
