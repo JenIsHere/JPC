@@ -121,18 +121,18 @@ ul li {
     position: absolute;
     right: 10px;
     z-index: 2;
-    }
+}
     
 .legend h4 {
-margin: 0 0 10px;
+    margin: 0 0 10px;
 }
 
 .legend div span {
-border-radius: 50%;
-display: inline-block;
-height: 10px;
-margin-right: 5px;
-width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    margin-right: 5px;
+    width: 10px;
 }
 
 /* Jenish here*/
