@@ -9,6 +9,9 @@
   
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
 </head>
 
 <body>
@@ -46,8 +49,9 @@
     const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/cchappellfleming/cl1o4s7m5001a14n1udhz1c3u',// style URL
-    center: [-79.120, 43.701], // starting position [lng, lat]
-    zoom: 8 // starting zoom
+    center: [-79.120, 43.701],
+    zoom: 8,
+    minZoom: 8
     });
 
     function toggleSidebar(id) {
