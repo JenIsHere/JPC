@@ -9,9 +9,9 @@ body {
 }
 
 .header{
-	background-image: url(Greenbelt.jpg);
+	background-image:url(../Images/logoflem.svg);
 	background-size: cover;
-	background-position-y: 70%;
+	background-position-y: 40%;
 	margin:0;
 	padding:0;
 	height:20vw;
