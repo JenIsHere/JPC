@@ -21,7 +21,7 @@
         <li><a href="ESUWebMapSA.html">Study Area</a></li>
         <li><a class="active" href="ESUWebMapUR.html">Urban Weighted Surface</a></li>
         <li><a href="ESUWebMapBL.html">Balanced Weighted Surface</a></li>
-        <li><a href="ESUWebMapCN.html">Conservationist Weighted Surface</a></li>
+        <li><a href="ESUWebMapCN.html">Conservation Weighted Surface</a></li>
         <li><a href="faq.html">FAQ</a></li>
     </ul>
 </div>
@@ -68,6 +68,12 @@
             duration: 1000
         });
     } 
+    const nav = new mapboxgl.NavigationControl({
+        visualizePitch: true
+    });
+    
+    map.addControl(nav, 'top-right');
+
     map.on('load', () => {
         toggleSidebar('left');
     }); 
