@@ -9,6 +9,9 @@ body {
     color: black;
 	font-family: 'Montserrat', arial, helvetica, sans-serif;
 }
+.map{
+    overflow: hidden;
+}
 #map { 
     position: absolute; 
     top: 0; 
