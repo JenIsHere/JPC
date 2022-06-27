@@ -19,6 +19,9 @@ body {
     width: 100%; 
     z-index: 1;
 }
+.mapbox-improve-map {
+    display: none;
+}
 /* Sidebar */
 .rounded-rect {
     background: white;
