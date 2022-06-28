@@ -23,58 +23,31 @@
 
 <div class="grid2">
   <div class="gridcontent">
-    <p class="generalText">Producing a satisfactory solution to any problem requires planning, proper research and effective implementation of skills and knowledge of various software learned along the way. Team JPC's methodoly is expanded upon in the topics below.</p>
+    <p class="generalText">In order to complete our collaborative project, Team JPC recognizes four key components to implement an effective solution and to meet identified deliverables. Team JPC's methodology is expanded upon in the topics below.</p>
   </div>
 </div>
 
 <div class="grid">
   <div class="gridcontent">
-    <h1 class="homeSubHead">Data Collection and Research</h1>
-    <p class="generalText"> The first and often the most crucial step to any project is to define the scope as well as acquiring relevant data to support further processes. For creation of Team JPC's solution, the Greenbelt data was gathered from Ontario GeoHub while the collection of the 10 contested areas was conducted by the team members and their client at OHI.</p>
-    <p class="generalText"> One of the initial challanges that the team faced was deciding on the open-source software to explore and use, with limited or no prior experience.</p>
+    <h1 class="homeSubHead">Data acquisition & Data pre-processing</h1>
+    <p class="generalText">The initial phase of the project included the collection of data to guide the spatial analysis as well as ensure a visually pleasing cartographic output. The data JPC acquired and incorporated into the final deliverables came from a wide variety of sources including the Ontario GeoHub, Statistics Canada, Topographic Data of Canada - CanVec Series as well as the European Space Agency. </p>
   </div>
 </div>
 
 <div class="grid2">
   <div class="gridcontent">
-    <h1 class="homeSubHead">Creating a Basemap in Mapbox</h1>
-    <p class="generalText"> To create a visually appealing webmap, the team needed a good basemap. Being limited to open-source software, JPC decided to utilize Mapbox for creation of a basemap. </p>
-    <p class="generalText"> After following a few tutorials, we were able to put together a basemap, or a style, as Mapbox defines it. Though this one didn't do any justice to our theme as it was created from a template, it enabled the learning process allowing it to be further refined in later stages.</p>
-    <div>
-      <!-- img -->
-    </div>
-    <p class="generalText">Instead of making a basemap from an existing style template, it was decided that a style would be created from a blank template to limit the excess data being visualized.</p>
-    <p class="generalText"> With cartographic principles in mind, the team created a "style" which would make the viewer focus on the actual content of the layers to be added. This style contained colours which were easier on the eyes as well as elements that followed appropriate visual hierarchy.</p>
-    <div>
-      <!-- img -->
-    </div>
-    <p class="generalText">With a positive response from all the members, this basemap was finalized.</p>
-    <p class="generalText">Now, to add more context to the basemap, the members decided to try and figure out how to add data to Mapbox styles and symbolize it. For this, a demo dataset was used and points were placed on the basemap, with their markers able to be edited. With the use of some javascript to input an event listener which would work if the user clicked on a marker, displaying a pop-up with the description of that spot, acquired from the dataset.</p>
-    <div>
-      <!-- img -->
-    </div>
-    <p class="generalText"> Following the same steps, the Greenbelt GeoJSON data was downloaded from GeoHub and uploaded to MapBox to be added to the basemap and provide a better understanding of where the Greenbelt lies.</p>
-    <p class="generalText">This layer was visualized based on the following greenbelt designations: Niagara Escarpment, Oak Ridges Moraine Conservation Plan, Urban River Valley and Protected Countryside.</p>
-    <div>
-      <!-- img -->
-    </div>
-    <p class="generalText">With successful implementation of markers and pop-ups, the group chose to explore more features to create an interactive experience for the viewer.</p>
-    <p class="generalText">As such, the team decided to tackle the task of creating a slideshow gallery in a marker tooltip, which would allow the user to switch between contextual images associated with the marker location. Here, we also tried to customize the markers with symbols and colours.</p>
-    <div>
-      <!-- img -->
-    </div>
-    <p class="generalText">This last process was the most complex of all, requiring good knowledge of the code as compared to the others which were more reliant on Mapbox to do the work for them.</p>
+    <h1 class="homeSubHead">Spatial Analysis</h1>
+    <p class="generalText">The Spatial Analysis conducted was a key factor in the deliverables. Three scenarios were defined: the Urban Development Approach, the Conservation Approach and the Balanced Approach each treated as their own Site Suitability Multi-Criteria Decision Analysis.</p>
+    <p class="generalText">JPC defined effective criteria in which to base our analysis. This included categorizing existing lands based on current land use, land classifications as well as topological features and existing demographic indicators. Each of these criteria were rated from 1 (least suitable) through 9 (most suitable) for urban development under each of the three approaches. With the criteria established the next step was to generate the AHP pairwise comparisons between each criterion to derive their level of importance.</p>
+    <p class="generalText">With the ratings for each criteria and the pairwise comparison weightings defined, JPC utilized ArcGIS Pro to build models and  execute the analysis generating cost surfaces for each criterion and final weighted surfaces under each approach.</p>
   </div>
 </div>
 
 <div class="grid">
   <div class="gridcontent">
     <h1 class="homeSubHead">Interactive Web Map</h1>
-    <p class="generalText">To combine the collected data, newly created base map and the digitized hot spots, we utilized LeafletJS. To initiate Leaflet within our code and before bringing in a map, we needed to include both the Leaflet CSS file and the Leaflet Java Script references to the document.</p>
-    <p class="generalText">The map set up only includes a few simple steps. First the creation of a map div element, then for a variable 'map' setting the view and zoom level for the initial display. Incorporating the base map is done through initializing a tile layer, in this case our Mapbox style (basemap), specifying the tile size and providing a Mapbox access token.</p>
-    <div>
-      <!-- img -->
-    </div>
+    <p class="generalText">To display the results on a web map, the team first needed to create a base map including key data layers would be visually appealing as well as help incorporate our analysis results. Through the use of MapBox styles and GeoJSON, With cartographic principles in mind, an attractive style was generated and further utilized to displays the results for each of the final weighted surfaces.</p>    
+    <p class="generalText">Utilizing GitHub, HTML, CSS and MapBox GL JS, an interactive web map was created. The aforementioned styles were incorporated with the proper rendering properties, a sidebar for supplementary test, a legend and full navigation controls; all to the benefit of enabling our analysis results in telling their story.</p>
   </div>
 </div>
 
